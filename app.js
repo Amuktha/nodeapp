@@ -4,6 +4,7 @@ const request = require('supertest')
 const app = express();
 const db = require('./db')
 const fs = require('fs')
+const mongoose = require('mongoose')
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -12,44 +13,75 @@ app.use(bodyParser.json({
   extended: true
 }));
 
+//Connect to Mongoose
+mongoose.connect('mongodb://localhost/recipes')
+var db2 = mongoose.connection
+
+
 /*
-  Recipe-list feature, getting a list of Recipes
+ Recipe-list feature, getting a list of Recipes
  */
-app.get('/v1/recipes', (req, res) => {
-   db.getRecipes().then((response) => {
-     res.setHeader('content-type', 'application/json')
-     res.send(response)
-   }).catch(() => {
-     res.status(404).json({err:"Sorry, we currently have no recipes for you"});
-   })
+app.get('/api/recipes', (req, res) => {
+  db.getRecipes().then((response) => {
+    res.setHeader('content-type', 'application/json')
+    res.send(response)
+  }).catch(() => {
+    res.status(404).json({err: "Sorry, we currently have no recipes for you"});
+  })
 })
 
 /*
  Get details of a specific recipe
  */
-app.get('/v1/recipes/:id', (req, res) => {
+app.get('/api/recipes/:id', (req, res) => {
   db.getOneRecipe(req.params.id).then((response) => {
     res.setHeader('content-type', 'application/json')
     res.send(response)
-  }).catch( () => {
-    res.status(404).json({err:"Sorry, this recipe doesn't exist or may have been removed"});
+  }).catch(() => {
+    res.status(404).json({err: "Sorry, this recipe doesn't exist or may have been removed"});
   })
 })
 
 /*
-Get image of a recipe
+ Get image of a recipe
  */
-app.get('/v1/recipes/:id/image', (req,res) => {
+app.get('/api/recipes/:id/image', (req, res) => {
   console.log(req.params.id)
   db.getOneRecipe(req.params.id).then((response) => {
-    console.log('This is the resposne')
-    var img = fs.readFileSync(JSON.parse(response).Image_URL);
-    res.writeHead(200, {'Content-Type': 'image/gif' });
-    res.end(img, 'binary');
-  }).catch( () => {
-    res.status(404).json({err:"Sorry, this recipe doesn't exist or may have been removed"});
+    console.log(response)
+    var img = fs.readFileSync(response.image_url)
+    res.writeHead(200, {'Content-Type': 'image/gif'})
+    res.end(img, 'binary')
+  }).catch(() => {
+    res.status(404).json({err: "Sorry, this recipe image doesn't exist or may have been removed"});
   })
 })
+
+
+/*
+ Filter recipes with recipe name
+ */
+app.get('/api/recipes/filter/recipeName/:filter', (req, res) => {
+  db.getFilteredRecipesByName(req.params.filter).then((response) => {
+    res.setHeader('content-type', 'application/json')
+    res.send(response)
+  }).catch(() => {
+    res.status(404).json({err: "Sorry, we currently have no recipes for you with name " + req.params.filter});
+  })
+})
+
+/*
+ Filter recipes with recipe ingredient
+ */
+app.get('/api/recipes/filter/ingredient/:filter', (req, res) => {
+  db.getFilteredRecipesByIngredient(req.params.filter).then((response) => {
+    res.setHeader('content-type', 'application/json')
+    res.send(response)
+  }).catch(() => {
+    res.status(404).json({err: "Sorry, we currently have no recipes for you with ingredient " + req.params.filter});
+  })
+})
+
 
 //
 // app.get('v1/profile/profileid/starred recipes', (req, res) => {
@@ -66,7 +98,6 @@ app.get('/v1/recipes/:id/image', (req,res) => {
 // app.delete('v1/profile/profileid/starredrecipes', (req, res) => {
 // })
 
-module.exports = app
 
 // app.post('/v1/users', function(req,res){
 //     fs.readFile(__dirname + "/resources/" + "users.json", 'utf8', function readFileCallback(err, data){
@@ -82,5 +113,8 @@ module.exports = app
 //
 //     res.send(req.body);
 // });
-app.listen(3000, function() {
+module.exports = app
+
+app.listen(3000, function () {
+  console.log('app listening at post 3000!')
 });

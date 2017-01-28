@@ -1,38 +1,38 @@
 [
   {
-    "Id": "73478",
-    "Name": "Lemon Chicken",
-    "Cooking Time": "30 minutes",
-    "Main Ingredients": "Chicken, Lemon, Thyme",
-    "Recipe Ingredients": [
-      "4 x Chicken Breasts",
-      "1 tsp Thyme ",
-      "1 x Lemon"
-    ],
-    "Image_URL": "./images/lemon_chicken.png"
+    "id": "73478",
+    "name": "lemon chicken",
+    "cooking_time": "30 minutes",
+    "main_ingredients": "chicken, lemon, thyme",
+    "ingredients": {
+      "chicken_breasts":4,
+      "thyme":"1tsp",
+      "lemon": 1
+    },
+    "image_url": "./resources/images/lemon_chicken.png"
   },
   {
-    "Id": "73479",
-    "Name": "Beef Stroganoff",
-    "Cooking Time": "30 minutes",
-    "Main Ingredients": "Beef, Mustard, Mushrooms",
-    "Recipe Ingredients": [
-      "4 x Beef slices",
-      "2 tsp Mustard ",
-      "10 x Mushrooms"
-    ],
-    "Image_URL": "./images/beef_stroganoff.jpg"
+    "id": "73479",
+    "name": "beef stroganoff",
+    "cooking_time": "30 minutes",
+    "main_ingredients": "beef, mustard, mushrooms",
+    "ingredients": {
+      "beef_slices":4,
+      "mustard": "2tsp",
+      "mushrooms": 10
+    },
+    "image_url": "./resources/images/beef_stroganoff.png"
   },
   {
-    "Id": "73480",
-    "Name": "Chicken Caesar Salad",
-    "Cooking Time": "25 minutes",
-    "Main Ingredients": "Lettuce, Croutons, Parmesan",
-    "Recipe Ingredients": [
-      "1 x Lettuce",
-      "4 tsp Croutons ",
-      "2 tsp Parmesan"
-    ],
-    "Image_URL": "./images/chicken_caesar_salad.png"
+    "id": "73480",
+    "name": "chicken caesar salad",
+    "cooking_time": "25 minutes",
+    "main_ingredients": "lettuce, croutons, parmesan",
+    "ingredients": {
+      "lettuce": "1",
+      "croutons": "4tsp",
+      "parmesan": "2tsp"
+    },
+    "image_url": "./resources/images/chicken_caesar_salad.png"
   }
 ]
