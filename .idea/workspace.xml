@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0081645e-b4c2-4ba8-95b6-a78a1ddd74b3" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/images/beef_stroganoff.jpg" afterPath="$PROJECT_DIR$/resources/images/beef_stroganoff.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/images/chicken_caesar_salad.png" afterPath="$PROJECT_DIR$/resources/images/chicken_caesar_salad.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/images/lemon_chicken.png" afterPath="$PROJECT_DIR$/resources/images/lemon_chicken.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/resources/testRecipes.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/db.spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.js" afterPath="$PROJECT_DIR$/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/recipes.json" afterPath="$PROJECT_DIR$/resources/recipes.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/api.spec.js" afterPath="$PROJECT_DIR$/test/functional/api.spec.js" />
     </list>
     <ignored path="nodeapp.iws" />
@@ -34,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="80" column="116" selection-start-line="80" selection-start-column="116" selection-end-line="80" selection-end-column="116" />
+            <state relative-caret-position="300">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -47,8 +47,8 @@
       <file leaf-file-name="recipes.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/recipes.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -57,18 +57,50 @@
       <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="90">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filter_recipes.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/filter_recipes.feature">
+      <file leaf-file-name="api.spec.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/functional/api.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+              <folding>
+                <element signature="e#275#570#0" expanded="false" />
+                <element signature="e#1115#1676#0" expanded="false" />
+                <element signature="e#1758#2058#0" expanded="false" />
+                <element signature="e#2109#2732#0" expanded="false" />
+                <element signature="e#2249#2309#0" expanded="false" />
+                <element signature="e#2788#3663#0" expanded="false" />
+                <element signature="e#2869#3267#0" expanded="false" />
+                <element signature="e#2957#3235#0" expanded="false" />
+                <element signature="e#3734#4563#0" expanded="false" />
+                <element signature="e#3916#4114#0" expanded="false" />
+                <element signature="e#4597#4827#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recipe_list.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/recipe_list.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recipe.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/recipe.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -95,13 +127,16 @@
         <option value="internal/module.js" />
         <option value="$PROJECT_DIR$/features/star.feature" />
         <option value="$PROJECT_DIR$/.eslintrc" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/unit/appSpec.js" />
         <option value="$PROJECT_DIR$/test/api.spec.js" />
-        <option value="$PROJECT_DIR$/test/functional/api.spec.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test/ressources/testRecipes.json" />
+        <option value="$PROJECT_DIR$/test/unit/db.spec.js" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/db.js" />
         <option value="$PROJECT_DIR$/resources/recipes.json" />
-        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/test/functional/api.spec.js" />
       </list>
     </option>
   </component>
@@ -151,7 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -180,7 +214,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functional" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -197,15 +285,30 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,10 +321,10 @@
     <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/node-tutorial-2-restful-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$3/Languages" value="JSON&#10;XML" />
@@ -244,8 +347,8 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.GET /api/recipes/:id/image">
-    <configuration default="false" name="GET /api/recipes" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Mocha.test/functional/api.spec.js">
+    <configuration default="false" name="GET /api/recipes/:id.should return error when there is no recipe for the given id" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
@@ -253,25 +356,11 @@
       <envs />
       <ui>bdd</ui>
       <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
+      <test-kind>TEST</test-kind>
       <test-file>$PROJECT_DIR$/test/functional/api.spec.js</test-file>
       <test-names>
-        <name value="GET /api/recipes" />
-      </test-names>
-      <method />
-    </configuration>
-    <configuration default="false" name="GET /api/recipes/:id/image" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/functional/api.spec.js</test-file>
-      <test-names>
-        <name value="GET /api/recipes/:id/image" />
+        <name value="GET /api/recipes/:id" />
+        <name value="should return error when there is no recipe for the given id" />
       </test-names>
       <method />
     </configuration>
@@ -287,7 +376,7 @@
       <test-file>$PROJECT_DIR$/test/functional/api.spec.js</test-file>
       <method />
     </configuration>
-    <configuration default="false" name="GET /api/recipes/:id/image.should return image of the recipe" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="GET /api/recipes.should return error when there is no recipe for the given id" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
@@ -298,12 +387,28 @@
       <test-kind>TEST</test-kind>
       <test-file>$PROJECT_DIR$/test/functional/api.spec.js</test-file>
       <test-names>
-        <name value="GET /api/recipes/:id/image" />
-        <name value="should return image of the recipe" />
+        <name value="GET /api/recipes" />
+        <name value="should return error when there is no recipe for the given id" />
       </test-names>
       <method />
     </configuration>
-    <configuration default="false" name="GET /api/:id/image" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="GET /api/recipes.should return error when there are no recipes" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/functional/api.spec.js</test-file>
+      <test-names>
+        <name value="GET /api/recipes" />
+        <name value="should return error when there are no recipes" />
+      </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="GET /api/recipes" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
@@ -314,7 +419,7 @@
       <test-kind>SUITE</test-kind>
       <test-file>$PROJECT_DIR$/test/functional/api.spec.js</test-file>
       <test-names>
-        <name value="GET /api/:id/image" />
+        <name value="GET /api/recipes" />
       </test-names>
       <method />
     </configuration>
@@ -790,19 +895,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Mocha.appSpec.js" />
       <item index="1" class="java.lang.String" itemvalue="Mocha.unit/appSpec.js" />
-      <item index="2" class="java.lang.String" itemvalue="Mocha.GET /api/recipes" />
-      <item index="3" class="java.lang.String" itemvalue="Mocha.GET /api/recipes/:id/image" />
-      <item index="4" class="java.lang.String" itemvalue="Mocha.test/functional/api.spec.js" />
-      <item index="5" class="java.lang.String" itemvalue="Mocha.GET /api/recipes/:id/image.should return image of the recipe" />
-      <item index="6" class="java.lang.String" itemvalue="Mocha.GET /api/:id/image" />
+      <item index="2" class="java.lang.String" itemvalue="Mocha.GET /api/recipes/:id.should return error when there is no recipe for the given id" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.test/functional/api.spec.js" />
+      <item index="4" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there is no recipe for the given id" />
+      <item index="5" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there are no recipes" />
+      <item index="6" class="java.lang.String" itemvalue="Mocha.GET /api/recipes" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Mocha.GET /api/recipes/:id/image" />
-        <item index="1" class="java.lang.String" itemvalue="Mocha.GET /api/:id/image" />
-        <item index="2" class="java.lang.String" itemvalue="Mocha.GET /api/recipes/:id/image.should return image of the recipe" />
-        <item index="3" class="java.lang.String" itemvalue="Mocha.test/functional/api.spec.js" />
-        <item index="4" class="java.lang.String" itemvalue="Mocha.GET /api/recipes" />
+        <item index="0" class="java.lang.String" itemvalue="Mocha.test/functional/api.spec.js" />
+        <item index="1" class="java.lang.String" itemvalue="Mocha.GET /api/recipes" />
+        <item index="2" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there are no recipes" />
+        <item index="3" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there is no recipe for the given id" />
+        <item index="4" class="java.lang.String" itemvalue="Mocha.GET /api/recipes/:id.should return error when there is no recipe for the given id" />
       </list>
     </recent_temporary>
   </component>
@@ -833,6 +938,7 @@
       <workItem from="1485466929766" duration="2540000" />
       <workItem from="1485515887217" duration="23467000" />
       <workItem from="1485598518893" duration="8067000" />
+      <workItem from="1485735066905" duration="5027000" />
     </task>
     <task id="LOCAL-00001" summary="Get recipe list and get specific recipe APIs">
       <created>1485563674230</created>
@@ -845,39 +951,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GET__api__id_image - 2017.01.28 at 11h 31m 42s.xml">
-      <configuration name="GET /api/:id/image" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="GET__api_recipes - 2017.01.30 at 01h 33m 50s.xml">
+      <configuration name="GET /api/recipes" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__api__id_image - 2017.01.28 at 11h 33m 05s.xml">
-      <configuration name="GET /api/:id/image" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="GET__api_recipes_should_return_error_when_there_are_no_recipes - 2017.01.30 at 01h 31m 15s.xml">
+      <configuration name="GET /api/recipes.should return error when there are no recipes" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__api__id_image - 2017.01.28 at 11h 33m 54s.xml">
-      <configuration name="GET /api/:id/image" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="GET__api_recipes_should_return_error_when_there_are_no_recipes - 2017.01.30 at 01h 31m 48s.xml">
+      <configuration name="GET /api/recipes.should return error when there are no recipes" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__api_recipes__id_image - 2017.01.28 at 11h 27m 13s.xml">
-      <configuration name="GET /api/recipes/:id/image" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="GET__api_recipes_should_return_error_when_there_are_no_recipes - 2017.01.30 at 01h 32m 25s.xml">
+      <configuration name="GET /api/recipes.should return error when there are no recipes" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__api_recipes__id_image - 2017.01.28 at 12h 14m 51s.xml">
-      <configuration name="GET /api/recipes/:id/image" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="GET__api_recipes_should_return_error_when_there_is_no_recipe_for_the_given_id - 2017.01.30 at 01h 30m 28s.xml">
+      <configuration name="GET /api/recipes.should return error when there is no recipe for the given id" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__api_recipes__id_image - 2017.01.28 at 13h 26m 22s.xml">
-      <configuration name="GET /api/recipes/:id/image" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_functional_api_spec_js - 2017.01.30 at 01h 27m 17s.xml">
+      <configuration name="test/functional/api.spec.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__api_recipes__id_image - 2017.01.28 at 13h 35m 59s.xml">
-      <configuration name="GET /api/recipes/:id/image" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_functional_api_spec_js - 2017.01.30 at 01h 27m 19s.xml">
+      <configuration name="test/functional/api.spec.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__api_recipes__id_image_should_return_image_of_the_recipe - 2017.01.28 at 11h 27m 31s.xml">
-      <configuration name="GET /api/recipes/:id/image.should return image of the recipe" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_functional_api_spec_js - 2017.01.30 at 01h 27m 49s.xml">
+      <configuration name="test/functional/api.spec.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="GET__api_recipes__id_image_should_return_image_of_the_recipe - 2017.01.28 at 11h 28m 16s.xml">
-      <configuration name="GET /api/recipes/:id/image.should return image of the recipe" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_functional_api_spec_js - 2017.01.30 at 01h 32m 50s.xml">
+      <configuration name="test/functional/api.spec.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_functional_api_spec_js - 2017.01.28 at 11h 26m 39s.xml">
+    <history-entry file="test_functional_api_spec_js - 2017.01.30 at 01h 33m 59s.xml">
       <configuration name="test/functional/api.spec.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52499000" />
+    <option name="totallyTimeSpent" value="60393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -898,18 +1004,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32621083" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6367521" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36609685" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3233618" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7863248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36467236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18597998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43162394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36752138" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -935,7 +1041,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app.js</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -944,37 +1058,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/functional/api.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_52.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -995,7 +1078,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#275#570#0" expanded="false" />
+            <element signature="e#1115#1676#0" expanded="false" />
+            <element signature="e#1758#2058#0" expanded="false" />
+            <element signature="e#2109#2732#0" expanded="false" />
+            <element signature="e#2249#2309#0" expanded="false" />
+            <element signature="e#2788#3663#0" expanded="false" />
+            <element signature="e#2869#3267#0" expanded="false" />
+            <element signature="e#2957#3235#0" expanded="false" />
+            <element signature="e#3734#4563#0" expanded="false" />
+            <element signature="e#3916#4114#0" expanded="false" />
+            <element signature="e#4597#4827#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,7 +1128,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#275#570#0" expanded="false" />
+            <element signature="e#1115#1676#0" expanded="false" />
+            <element signature="e#1758#2058#0" expanded="false" />
+            <element signature="e#2109#2732#0" expanded="false" />
+            <element signature="e#2249#2309#0" expanded="false" />
+            <element signature="e#2788#3663#0" expanded="false" />
+            <element signature="e#2869#3267#0" expanded="false" />
+            <element signature="e#2957#3235#0" expanded="false" />
+            <element signature="e#3734#4563#0" expanded="false" />
+            <element signature="e#3916#4114#0" expanded="false" />
+            <element signature="e#4597#4827#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,7 +1178,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="e#275#570#0" expanded="false" />
+            <element signature="e#1115#1676#0" expanded="false" />
+            <element signature="e#1758#2058#0" expanded="false" />
+            <element signature="e#2109#2732#0" expanded="false" />
+            <element signature="e#2249#2309#0" expanded="false" />
+            <element signature="e#2788#3663#0" expanded="false" />
+            <element signature="e#2869#3267#0" expanded="false" />
+            <element signature="e#2957#3235#0" expanded="false" />
+            <element signature="e#3734#4563#0" expanded="false" />
+            <element signature="e#3916#4114#0" expanded="false" />
+            <element signature="e#4597#4827#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1102,7 +1221,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#275#570#0" expanded="false" />
+            <element signature="e#1115#1676#0" expanded="false" />
+            <element signature="e#1758#2058#0" expanded="false" />
+            <element signature="e#2109#2732#0" expanded="false" />
+            <element signature="e#2249#2309#0" expanded="false" />
+            <element signature="e#2788#3663#0" expanded="false" />
+            <element signature="e#2869#3267#0" expanded="false" />
+            <element signature="e#2957#3235#0" expanded="false" />
+            <element signature="e#3734#4563#0" expanded="false" />
+            <element signature="e#3916#4114#0" expanded="false" />
+            <element signature="e#4597#4827#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1178,20 +1309,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/eslint/lib/config/config-file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/eslint/lib/util/module-resolver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/eslint/lib/config/config-file.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/eslint/lib/util/module-resolver.js" />
     <entry file="file://$PROJECT_DIR$/.eslintrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1213,37 +1332,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/eslint/lib/cli-engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="738" column="27" selection-start-line="738" selection-start-column="27" selection-end-line="738" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/recipe.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/recipe_list.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/eslint/lib/cli-engine.js" />
     <entry file="file://$PROJECT_DIR$/resources/images/lemon_chicken.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1268,15 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/functional/api.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,27 +1365,102 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/recipes.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/supertest/lib/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="77">
+          <caret line="178" column="5" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/testRecipes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/db.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/recipe.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/recipe_list.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="80" column="116" selection-start-line="80" selection-start-column="116" selection-end-line="80" selection-end-column="116" />
+        <state relative-caret-position="300">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/recipes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/functional/api.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="e#275#570#0" expanded="false" />
+            <element signature="e#1115#1676#0" expanded="false" />
+            <element signature="e#1758#2058#0" expanded="false" />
+            <element signature="e#2109#2732#0" expanded="false" />
+            <element signature="e#2249#2309#0" expanded="false" />
+            <element signature="e#2788#3663#0" expanded="false" />
+            <element signature="e#2869#3267#0" expanded="false" />
+            <element signature="e#2957#3235#0" expanded="false" />
+            <element signature="e#3734#4563#0" expanded="false" />
+            <element signature="e#3916#4114#0" expanded="false" />
+            <element signature="e#4597#4827#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

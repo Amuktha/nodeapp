@@ -1,0 +1,26 @@
+[
+  {
+    "id": "73478",
+    "name": "lemon chicken",
+    "cooking_time": "30 minutes",
+    "main_ingredients": "chicken, lemon, thyme",
+    "ingredients": {
+      "chicken_breasts":4,
+      "thyme":"1tsp",
+      "lemon": 1
+    },
+    "image_url": "./resources/images/lemon_chicken.png"
+  },
+  {
+    "id": "73479",
+    "name": "beef stroganoff",
+    "cooking_time": "30 minutes",
+    "main_ingredients": "beef, mustard, mushrooms",
+    "ingredients": {
+      "beef_slices":4,
+      "mustard": "2tsp",
+      "mushrooms": 10
+    },
+    "image_url": "./resources/images/beef_stroganoff.png"
+  }
+]
