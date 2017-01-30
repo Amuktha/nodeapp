@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0081645e-b4c2-4ba8-95b6-a78a1ddd74b3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nodeapp.iws" />
@@ -28,41 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="db.spec.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/unit/db.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="42">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipes.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/recipes.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.spec.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.spec.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/functional/api.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="405">
+              <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
               <folding>
                 <element signature="e#275#570#0" expanded="false" />
                 <element signature="e#1115#1676#0" expanded="false" />
@@ -76,26 +55,6 @@
                 <element signature="e#3916#4114#0" expanded="false" />
                 <element signature="e#4597#4827#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recipe_list.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/recipe_list.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recipe.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/recipe.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -180,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,11 +149,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files" />
       </pane>
     </panes>
   </component>
@@ -235,23 +195,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.test/functional/api.spec.js">
-    <configuration default="false" name="GET /api/recipes/:id.should return error when there is no recipe for the given id" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/functional/api.spec.js</test-file>
-      <test-names>
-        <name value="GET /api/recipes/:id" />
-        <name value="should return error when there is no recipe for the given id" />
-      </test-names>
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Mocha.db.spec.js">
     <configuration default="false" name="test/functional/api.spec.js" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -309,6 +253,18 @@
       <test-names>
         <name value="GET /api/recipes" />
       </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="db.spec.js" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/unit/db.spec.js</test-file>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -783,19 +739,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Mocha.appSpec.js" />
       <item index="1" class="java.lang.String" itemvalue="Mocha.unit/appSpec.js" />
-      <item index="2" class="java.lang.String" itemvalue="Mocha.GET /api/recipes/:id.should return error when there is no recipe for the given id" />
-      <item index="3" class="java.lang.String" itemvalue="Mocha.test/functional/api.spec.js" />
-      <item index="4" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there is no recipe for the given id" />
-      <item index="5" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there are no recipes" />
-      <item index="6" class="java.lang.String" itemvalue="Mocha.GET /api/recipes" />
+      <item index="2" class="java.lang.String" itemvalue="Mocha.test/functional/api.spec.js" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there is no recipe for the given id" />
+      <item index="4" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there are no recipes" />
+      <item index="5" class="java.lang.String" itemvalue="Mocha.GET /api/recipes" />
+      <item index="6" class="java.lang.String" itemvalue="Mocha.db.spec.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Mocha.test/functional/api.spec.js" />
-        <item index="1" class="java.lang.String" itemvalue="Mocha.GET /api/recipes" />
-        <item index="2" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there are no recipes" />
-        <item index="3" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there is no recipe for the given id" />
-        <item index="4" class="java.lang.String" itemvalue="Mocha.GET /api/recipes/:id.should return error when there is no recipe for the given id" />
+        <item index="0" class="java.lang.String" itemvalue="Mocha.db.spec.js" />
+        <item index="1" class="java.lang.String" itemvalue="Mocha.test/functional/api.spec.js" />
+        <item index="2" class="java.lang.String" itemvalue="Mocha.GET /api/recipes" />
+        <item index="3" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there are no recipes" />
+        <item index="4" class="java.lang.String" itemvalue="Mocha.GET /api/recipes.should return error when there is no recipe for the given id" />
       </list>
     </recent_temporary>
   </component>
@@ -828,7 +784,9 @@
       <workItem from="1485598518893" duration="8067000" />
       <workItem from="1485735066905" duration="5027000" />
       <workItem from="1485740341080" duration="71000" />
-      <workItem from="1485740418126" duration="77000" />
+      <workItem from="1485740418126" duration="158000" />
+      <workItem from="1485740584634" duration="38000" />
+      <workItem from="1485740665046" duration="145000" />
     </task>
     <task id="LOCAL-00001" summary="Get recipe list and get specific recipe APIs">
       <created>1485563674230</created>
@@ -841,12 +799,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GET__api_recipes - 2017.01.30 at 01h 33m 50s.xml">
-      <configuration name="GET /api/recipes" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="GET__api_recipes_should_return_error_when_there_are_no_recipes - 2017.01.30 at 01h 31m 15s.xml">
-      <configuration name="GET /api/recipes.should return error when there are no recipes" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="GET__api_recipes_should_return_error_when_there_are_no_recipes - 2017.01.30 at 01h 31m 48s.xml">
       <configuration name="GET /api/recipes.should return error when there are no recipes" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -855,6 +807,9 @@
     </history-entry>
     <history-entry file="GET__api_recipes_should_return_error_when_there_is_no_recipe_for_the_given_id - 2017.01.30 at 01h 30m 28s.xml">
       <configuration name="GET /api/recipes.should return error when there is no recipe for the given id" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="db_spec_js - 2017.01.30 at 01h 46m 40s.xml">
+      <configuration name="db.spec.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
     <history-entry file="test_functional_api_spec_js - 2017.01.30 at 01h 27m 17s.xml">
       <configuration name="test/functional/api.spec.js" configurationId="mocha-javascript-test-runner" />
@@ -871,9 +826,12 @@
     <history-entry file="test_functional_api_spec_js - 2017.01.30 at 01h 33m 59s.xml">
       <configuration name="test/functional/api.spec.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="test_functional_api_spec_js - 2017.01.30 at 01h 45m 02s.xml">
+      <configuration name="test/functional/api.spec.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60541000" />
+    <option name="totallyTimeSpent" value="60805000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -886,7 +844,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -895,23 +853,23 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7849003" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36467236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18597998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18597998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36752138" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7863248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36752138" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1278,14 +1236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/db.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/recipe.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1310,14 +1260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/recipes.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1326,10 +1268,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/functional/api.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="405">
+          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
           <folding>
             <element signature="e#275#570#0" expanded="false" />
             <element signature="e#1115#1676#0" expanded="false" />
@@ -1343,6 +1293,14 @@
             <element signature="e#3916#4114#0" expanded="false" />
             <element signature="e#4597#4827#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/db.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
