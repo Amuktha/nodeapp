@@ -4,14 +4,6 @@ const request = require('supertest')
 const app = express();
 const db = require('./db')
 const fs = require('fs')
-const mongoose = require('mongoose')
-
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-app.use(bodyParser.json({
-  extended: true
-}));
 
 /*
  Recipe-list feature, getting a list of Recipes
@@ -42,7 +34,8 @@ app.get('/api/recipes/:id', (req, res) => {
  */
 app.get('/api/recipes/:id/image', (req, res) => {
   db.getOneRecipe(req.params.id).then((response) => {
-    var img = fs.readFileSync(response.image_url)
+    return db.getImage(response.image_url)
+  }).then((img) => {
     res.writeHead(200, {'Content-Type': 'image/gif'})
     res.end(img, 'binary')
   }).catch(() => {
@@ -59,7 +52,7 @@ app.get('/api/recipes/filter/:filter', (req, res) => {
     res.setHeader('content-type', 'application/json')
     res.send(response)
   }).catch(() => {
-    res.status(404).json({err: "Sorry, we currently have no recipes for you with name '" + req.params.filter+"'"});
+    res.status(404).json({err: "Sorry, we currently have no recipes for you with name '" + req.params.filter + "'"});
   })
 })
 
@@ -71,7 +64,19 @@ app.get('/api/recipes/filter/ingredient/:filter', (req, res) => {
     res.setHeader('content-type', 'application/json')
     res.send(response)
   }).catch(() => {
-    res.status(404).json({err: "Sorry, we currently have no recipes for you with ingredient '" + req.params.filter+"'"});
+    res.status(404).json({err: "Sorry, we currently have no recipes for you with ingredient '" + req.params.filter + "'"});
+  })
+})
+
+/*
+ Get Starred Recipes
+ */
+app.get('/api/profile/:profileid/starredrecipes', (req, res) => {
+  db.getStarredRecipes(req.params.profileid).then((response) => {
+    res.setHeader('content-type', 'application/json')
+    res.send(response)
+  }).catch(() => {
+    res.status(404).json({err: "Sorry, there are no starred reciped for the user '" + req.params.userId + "'"});
   })
 })
 

@@ -1,7 +1,7 @@
 {
   "name": "profile",
   "version": "1.0.0",
-  "description": "Recipes personalized",
+  "description": "",
   "author": "Amuktha Akkinepally",
   "main": "app.js",
   "dependencies": {
@@ -12,11 +12,10 @@
     "express": "^4.14.0",
     "mocha": "^3.1.2",
     "promise": "^7.1.1",
-    "mongoose": "^4.4.15",
     "morgan": "^1.7.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec",
+    "test": "./node_modules/.bin/mocha test/** --reporter spec",
     "lint": "eslint src/ test/"
   },
   "license": "ISC",
