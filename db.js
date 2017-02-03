@@ -1,42 +1,46 @@
 const fs = require('fs')
+const mysql = require('mysql2')
+const config = require('./config')
+
+let connection
+
+function getConnection() {
+  if (!connection) {
+    connection = mysql.createConnection(config.db)
+  }
+  return connection
+}
+
 //Using file system but it should be a db in real case
 
 exports.getRecipes = () => {
   return new Promise((resolve, reject) => {
-    fs.readFile(__dirname + '/resources/' + 'recipes.json', 'utf8', (err, data) => {
-      !data || err ? reject(err) : resolve(data)
+    getConnection().execute('SELECT * from recipes', (err, result) => {
+      resolve(result)
     })
   })
 }
 
 exports.getOneRecipe = (recipeId) => {
   return new Promise((resolve, reject) => {
-    fs.readFile(__dirname + '/resources/' + 'recipes.json', 'utf8', (err, data) => {
-      var parsedData = JSON.parse(data)
-      const recipe = parsedData.find((item) => recipeId === item.id)
-      !recipe || err ? reject('Recipe not found') : resolve(recipe)
+    getConnection().execute('SELECT * from recipes where id=' + recipeId, (err, result) => {
+      !result || result.length == 0|| err ? reject('Recipe not found') : resolve(result[0])
     })
   })
 }
 
 exports.getFilteredRecipesByName = (filter) => {
   return new Promise((resolve, reject) => {
-    fs.readFile(__dirname + '/resources/' + 'recipes.json', 'utf8', (err, data) => {
-      var parsedData = JSON.parse(data)
-      const recipes = parsedData.filter((item) => new RegExp(filter.toLowerCase()).test(item.name))
-      if (recipes.length == 0) return reject('No filtered recipes found')
-      err ? reject('No filtered recipes found') : resolve(recipes)
+    getConnection().execute('SELECT * from recipes where name LIKE "%' + filter + '%";', (err, result) => {
+      !result || result.length == 0 || err ? reject('Recipe not found') : resolve(result)
     })
   })
 }
 
 exports.getFilteredRecipesByIngredient = (filter) => {
   return new Promise((resolve, reject) => {
-    fs.readFile(__dirname + '/resources/' + 'recipes.json', 'utf8', (err, data) => {
-      var parsedData = JSON.parse(data)
-      const filteredArray = parsedData.filter((item) => new RegExp(filter.toLowerCase()).test(item.main_ingredients))
-      if (filteredArray.length == 0) reject('No filtered recipes found')
-      err ? reject('No filtered recipes found') : resolve(filteredArray)
+    getConnection().execute('SELECT * from recipes where main_ingredients LIKE "%' + filter + '%";', (err, result) => {
+      !result || result.length == 0 || result.length == 0 || err ? reject('Recipe not found') : resolve(result)
     })
   })
 }
@@ -53,10 +57,10 @@ exports.getStarredRecipes = (profileId) => {
   })
 }
 
-exports.getImage = (image) => {
+exports.getImageUrl = (recipeId) => {
   return new Promise((resolve, reject) => {
-    fs.readFile(image, (err, data) => {
-      !data || err ? reject(err) : resolve(data)
+    getConnection().execute('SELECT image_url from recipes where id='+recipeId, (err, result) => {
+      !result || result.length ==0 || err ? reject('Recipe not found') : resolve(result[0])
     })
   })
 }

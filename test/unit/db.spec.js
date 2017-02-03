@@ -5,6 +5,7 @@ const db = require('../../db')
 const fs = require('fs')
 const sinon = require('sinon')
 const chaiAsPromised = require('chai-as-promised')
+const mysql = require('mysql2')
 
 chai.should()
 chai.use(chaiAsPromised)
@@ -111,6 +112,9 @@ describe('db', () => {
   })
   describe('getFilteredRecipesByIngredient', () => {
     let sandbox
+    let connection = {
+      execute: () => Promise.reject()
+    }
     beforeEach(() => {
       sandbox = sinon.sandbox.create()
     })
@@ -118,21 +122,48 @@ describe('db', () => {
     afterEach(() => {
       sandbox.restore()
     })
-    it('should return all the recipes matching the main ingredient name provided', (done) => {
+
+    it('should throw an error if no filtered recipes by ingredient', (done) => {
       sandbox.stub(fs, 'readFile').yields(null, JSON.stringify(data))
-      db.getFilteredRecipesByIngredient('mushrooms').then((result) => {
-        expect(fs.readFile.calledOnce).to.equal(true)
-        expect(result[0].id).to.equal('73479')
-        expect(result[0].name).to.equal('beef stroganoff')
+      sandbox.stub(connection, 'execute').yields('err', null)
+      sandbox.stub(mysql, 'createConnection').returns(connection)
+      db.getFilteredRecipesByName('uy').catch((err) => {
+        expect(mysql.createConnection.calledOnce).to.equal(true)
+        expect(err).to.equal('No filtered recipes found')
         done()
       })
     })
-    it('should throw an error if no filtered recipes by ingredient', (done) => {
-      sandbox.stub(fs, 'readFile').yields(null, JSON.stringify(data))
-      db.getFilteredRecipesByName('uy').catch((err) => {
-        expect(fs.readFile.calledOnce).to.equal(true)
-        expect(err).to.equal('No filtered recipes found')
-        done()
+  })
+  describe('when the execute call to db fails', () => {
+    let sandbox
+    let connection = {
+      execute: () => Promise.reject()
+    }
+    let rows = []
+    beforeEach(() => {
+      sandbox = sinon.sandbox.create()
+    })
+
+    afterEach(() => {
+      sandbox.restore()
+    })
+    it('should return all the recipes matching the main ingredient name provided', () => {
+      sandbox.stub(connection, 'execute').yields(null, rows)
+      sandbox.stub(mysql, 'createConnection').returns(connection)
+      db.getFilteredRecipesByName('Chicken').then((result) => {
+        // expect(fs.readFile.calledOnce).to.equal(true)
+        // expect(result[0].id).to.equal('73479')
+        // expect(result[0].name).to.equal('beef stroganoff')
+
+      })
+    })
+
+    it('should throw an error if no filtered recipes by ingredient', () => {
+      sandbox.stub(connection, 'execute').yields('err', null)
+      sandbox.stub(mysql, 'createConnection').returns(connection)
+      db.getFilteredRecipesByName('cuyuyu').catch(() => {
+        expect(mysql.createConnection.calledOnce).to.equal(true)
+        expect(connection.execute.calledOnce).to.equal(true)
       })
     })
   })

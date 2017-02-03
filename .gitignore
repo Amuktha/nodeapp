@@ -9,6 +9,8 @@ node_modules
 .idea/workspace.xml
 .idea/copyright/profiles_settings.xml
 .idea/libraries/nodeapp_node_modules.xml
+.idea/inspectionProfiles/profile_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
 module/app.js
 module/package.json
 module/bin/www
@@ -18,3 +20,4 @@ module/routes/users.js
 module/views/error.jade
 module/views/index.jade
 module/views/layout.jade
+profiles_settings.xml

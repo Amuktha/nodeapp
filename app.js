@@ -18,6 +18,19 @@ app.get('/api/recipes', (req, res) => {
 })
 
 /*
+ Post recipe
+ */
+app.post('/api/recipes', (req,res) => {
+  console.log(req.body.id)
+  db.postRecipe(id, name, cooking_time, main_ingredients, image_url).then((response) => {
+    res.setHeader('content-type', 'application/json')
+    res.send(response)
+  }).catch(() => {
+    res.status(404).json({err: "Sorry, we currently have no recipes for you"});
+  })
+})
+
+/*
  Get details of a specific recipe
  */
 app.get('/api/recipes/:id', (req, res) => {
@@ -33,11 +46,9 @@ app.get('/api/recipes/:id', (req, res) => {
  Get image of a recipe
  */
 app.get('/api/recipes/:id/image', (req, res) => {
-  db.getOneRecipe(req.params.id).then((response) => {
-    return db.getImage(response.image_url)
-  }).then((img) => {
+  db.getImageUrl(req.params.id).then((img) => {
     res.writeHead(200, {'Content-Type': 'image/gif'})
-    res.end(img, 'binary')
+    res.end(img.image_url, 'binary')
   }).catch(() => {
     res.status(404).json({err: "Sorry, this recipe image doesn't exist or may have been removed"});
   })
